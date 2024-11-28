@@ -30,7 +30,7 @@ The objective of this project is to build a machine learning model that predicts
             
   **GITHUB LINK** (https://github.com/cleavestone/CARLIFORNIA-HOUSE-PREDICTION)         
 """)
-st.image(r"img5.png")
+st.image(r"data/img5.png")
 
 st.markdown("""### :blue[**Customer Segmentation Using RFM Analysis in E-commerce**]
 
