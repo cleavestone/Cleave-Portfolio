@@ -11,11 +11,16 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
 from  langchain_core.prompts import PromptTemplate
 from langchain.callbacks.base import BaseCallbackHandler
+import streamlit as st
 
 load_dotenv()
 
-api_key=os.getenv("OPENAI_API_KEY")
-pinecone_key=os.getenv("PINECONE_API_KEY")
+#api_key=os.getenv("OPENAI_API_KEY")
+#pinecone_key=os.getenv("PINECONE_API_KEY")
+
+api_key = st.secrets["OPENAI_API_KEY"]
+pinecone_key=st.secrets["PINECONE_API_KEY"]
+
 os.environ["OPENAI_API_KEY"]=api_key
 os.environ["PINECONE_API_KEY"]=pinecone_key
 
