@@ -22,7 +22,10 @@ api_key = st.secrets["OPENAI_API_KEY"]
 pinecone_key=st.secrets["PINECONE_API_KEY"]
 
 os.environ["OPENAI_API_KEY"]=api_key
-os.environ["PINECONE_API_KEY"]=pinecone_key
+#os.environ["PINECONE_API_KEY"]=pinecone_key
+
+#openai.api_key = st.secrets["OPENAI_API_KEY"]
+
 
 def load_pdf(directory):
     loader=PyPDFDirectoryLoader(directory,glob='*.pdf')
@@ -36,7 +39,7 @@ def load_pdf(directory):
 ## Connect to Pinecone server
 from pinecone import Pinecone, ServerlessSpec
 
-pc = Pinecone()
+pc = Pinecone(api_key=pinecone_key)
 
 index_name = "chatbot2"
 
