@@ -55,7 +55,7 @@ The project aims to segment customers into distinct groups using RFM analysis, i
 
 GITHUB: (https://github.com/cleavestone/Customer-Segmentation/blob/main/Ecommerce_customer_segmentation.ipynb)           
 """)
-st.image(r"data\img3.png")
+st.image(r"data/img3.png")
 
 st.markdown("""### :blue[**Movie Recommendation System**]
 
@@ -75,7 +75,7 @@ The objective of this project is to build a **content-based movie recommendation
 GITHUB: (https://github.com/cleavestone/Movie_recommender)
 """)
 
-st.image(r"data\pic2 (1).jpg",use_container_width=True)
+st.image(r"data/pic2 (1).jpg",use_container_width=True)
 
 st.markdown("""### :blue[**PM2.5 Air Quality Forecasting Project**]
 
@@ -102,4 +102,4 @@ This project focuses on forecasting **PM2.5 concentration levels** to address ai
 - Provided visualizations of PM2.5 trends and forecasted values for better interpretation and decision-making.
 """)
 
-st.image(r"data\imggg.jpg")
+st.image(r"data/imggg.jpg")
