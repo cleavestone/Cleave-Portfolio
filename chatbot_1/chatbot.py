@@ -86,9 +86,11 @@ embeddings = OpenAIEmbeddings()
 
 prompt_template='''
 You are a helpful assistant.
-Use the following pieces of information to answer the users questions.
+Use the following pieces of information to answer the users questions if they are  medical related.
 if you dont know the answer , just say that you dont know . dont try to 
 make up the answer.
+If the user asks questions that are not medical related , you may proceed to reply with your own knowledge.
+
 
 Context: {context}
 Question: {question}
